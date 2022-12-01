@@ -21,14 +21,10 @@ public class searchFile {
     public static void main(String[] args) {
        if(args.length != 3) {
         System.out.println("Incorrect number of arguments. Format should be: search <pattern> <file>");
-        return;
-       }
-       if(!args[0].equals("search")) {
+       } else if(!args[0].equals("search")) {
         System.out.println("Incorrect command. Format should be: search <pattern> <file>");
-        return;
-       }
-       
+       } else {       
        printLines(args[1], args[2]);
-
+       }
     }
 }
